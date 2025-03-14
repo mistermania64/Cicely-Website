@@ -5,7 +5,7 @@
     <title>Animations</title>
     <link rel="stylesheet" href="myStyle.css">
 </head>
-<body>
+<body class="bg-beige">
     
 <div id = "canvas"> <!-- Overall section -->
     <div id = "flex-wrapper">
@@ -30,30 +30,29 @@
                 </table>
         </div>
 
-        <div id = "mainContent"> <!-- Content next to sidebar -->
-            <table id = "animations-table">
-                <tr>
-                    <td>
-                        <label style="text-align:center; border-style: dashed; width:30vw; height: 30vh;">I Like Cats</label>
-                        <video src="video/animations/i like cats.mp4" controls style = "width:30vw; height: 30vh;"></video>
-                    </td>
+        <div class = "flex-col"> 
 
-                    <td>
-                        <label>Cairo</label>
-                        <video src="video/animations/Cairo.mp4" controls style = "width:30vw; height: 30vh;"></video>
-                    </td>
+            <div class = "flex-row centered" style="align-items: center;">
+                    <!-- <label style="text-align:center;">I Like Cats</label> -->
+                    <video src="video/animations/i like cats.mp4" controls style = "width:640px; height: 360px;"></video>
 
-                    <td>
-                        <label>Rotoscoping Test</label>
-                        <video src="video/animations/rotoscoping-parris.mp4" controls style = "width:30vw; height: 30vh;"></video>
-                    </td>
-                </tr>
-            </table>
+                    <!-- <label>Cairo</label> -->
+                    <video src="video/animations/Cairo.mp4" controls class="res-640p"></video>
+            </div>
+
+            <div class = "flex-row centered" style="align-items: baseline;">
+                    <!-- <label class="centered">Rotoscoping Test</label> -->
+                    <video src="video/animations/rotoscoping-parris.mp4" controls class="res-640p"></video>
+
+                    <!-- <label class="centered">smoker</label> -->
+                    <video src="video/animations/smoker.mp4" controls style="width: 496px; height: 755px;"></video>
+
+                    <!-- <label class="centered">Walkin'</label> -->
+                    <video src="video/animations/walkin.mp4" controls style="width: 480px; height: 480px;"></video>
+            </div>
+
         </div>
     </div>
-    
-    <p>add illustrations here</p>
-    
 </div>
 
 </body>

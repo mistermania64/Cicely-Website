@@ -32,6 +32,49 @@ font-weight: 400;
 font-style: normal;
 }
 
+/* Positioning */
+.centered
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left
+{
+    justify-content: left;
+}
+
+.right
+{
+    justify-content: right;
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-col
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.res-640p
+{
+    width: 640px; 
+    height: 360px;
+}
+
+/* BG Colors */
+.bg-beige
+{
+    background-color: rgb(252, 246, 235);
+}
+
 #nameLink
 {
     font-family: New-Class;
@@ -62,13 +105,6 @@ table a
     border-color:aqua;
     /* display: flex; */
     /* border-style: solid; */
-}
-
-#flex-row
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 #flex-wrapper
@@ -127,7 +163,7 @@ table a
 {
     position: relative;
     /* max-width: 18%; */
-    font-size: 30px;
+    font-size: 25px;
     top: 200px;
     width: 40%;
     padding: 0% 5%;

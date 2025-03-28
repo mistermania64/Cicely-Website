@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Fine Art</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body class="bg-beige">
+    
+<div id = "canvas"> <!-- Overall section -->
+    <div id = "flex-wrapper">
+        <div id="mobileNav"> <!--Sidebar menu-->
+            <h1 style = "padding-left: 6%; padding-top: 3%;">
+                <a href = "aboutMe.html" id = "nameLink">Cicely Parris</a>
+            </h1>
+
+            <br>
+            <div class = "flex-col" id="sidebar">
+                <a href="animations.html">Animations</a>
+                <a href="illustrations.html">Illustrations</a>
+                <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a>
+
+                <div class="flex-col" id="visDevLinks" style="display: none;">
+                    <a href="visual-development.html">Characters</a>
+                    <a href="index.html">Environments</a>
+                </div>
+
+                <a href="3D.html">3D</a>
+                <a href="fine-art.html" style="color: gray;">Fine Art</a>
+            </div>
+
+            <div class = "flex-col" id="sublinks">
+                <a href = "aboutMe.html">About</a>
+                <a href = "files/CV.pdf" target="_blank">CV</a>
+            </div>
+
+            <!-- <table id = "sidebar"> -->
+                <!-- <tr><td><a href="studio-work.html">Studio Work</a></td></tr>
+                <tr><td><a href="storyboards.html">Storyboards</a></td></tr> -->
+                <!-- <tr><td><a href="animations.html">Animations</a></td></tr>
+                <tr><td><a href="illustrations.html">Illustrations</a></td></tr>
+                <tr><td><a href="visual-development.html">Visual Development</a></td></tr>
+                <tr><td><a href="3D.html">3D</a></td></tr>
+                <tr><td><a href="fine-art.html">Fine Art</a></td></tr>
+            </table>
+                
+            <table id = "sublinks">
+                <tr><td><a href = "aboutMe.html" style="color: gray;">About</a></td></tr>
+                <tr><td><a href = "files/CV.pdf" target="_blank">CV</a></td></tr>
+            </table> -->
+        </div>
+
+        <div class = "flex-col centered">
+            <label style="font-family: New-Class; padding: 2%; font-size: 40px;" class="centered">Fine Art</label>
+            
+            <!-- <div class="flex-row centered" style="padding: 1%; gap: 2px; flex-wrap: nowrap;"> -->
+            <div class="grid-container" id="fine-art-grid" style="">
+                <a target="_blank" href="img/Fine Art/model-female-sepia-pondering.jpg" style="grid-area: sepia-female-left;">
+                    <img src="img/Fine Art/model-female-sepia-pondering.jpg" style="height: 532px;">
+                </a>
+               
+                <a target="_blank" href="img/Fine Art/model-female-bw.jpg" style="grid-area: bw-female;">
+                    <img src="img/Fine Art/model-female-bw.jpg" style="width: 399px; height: 532px;"> <!-- Bigger: width: 756px; height: 1008px; Medium: width: 567px; height: 756px; Smaller: -->
+                </a>
+
+                <a target="_blank" href="img/Fine Art/model-male.jpg" style="grid-area: bw-male;">
+                    <img src="img/Fine Art/model-male.jpg" style="height: 532px; width: 410px;">
+                </a>
+                
+                <a target="_blank" href="img/Fine Art/model-female-sepia.jpg" style="grid-area: sepia-female-back;">
+                    <img src="img/Fine Art/model-female-sepia.jpg" style=" height: 532px;">
+                </a>
+
+                <a target="_blank" href="img/Fine Art/boars head.jpg" style="grid-area: boars-head;">
+                    <img src="img/Fine Art/boars head.jpg" style="width:780px; height: 602px;">
+                </a>
+
+                <a target="_blank" href="img/Fine Art/rose basket.jpg" style="grid-area: rose-basket;">
+                    <img src="img/Fine Art/rose basket.jpg" style="width: 793px; height: 601px;">
+                </a>
+
+                <a target="_blank" href="img/Fine Art/doll conch shell.jpg" style="grid-area: conch-shell;">
+                    <img src="img/Fine Art/doll conch shell.jpg" style="height: 532px; width: 410px;">
+                </a>
+
+                <a target="_blank" href="img/Fine Art/model-female-sepia-facing-right.jpg" style="grid-area: sepia-female-right;">
+                    <img src="img/Fine Art/model-female-sepia-facing-right.jpg" style="height: 532px;">
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="javascriptFunctions.js"></script>
+</body>
+</html>

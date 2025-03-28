@@ -6,6 +6,14 @@ html, body, div, #flex-wrapper
     /* border-style: solid; */
 }
 
+/* Cursor */
+body {
+    cursor: url("img/Cursors/awesomeFace.png") auto;
+}
+/* 
+a:hover{
+    cursor: url("img/Cursors/awesomeFace.png") auto !important;
+} */
 
 /* Fonts */
 
@@ -32,21 +40,21 @@ font-weight: 400;
 font-style: normal;
 }
 
-/* Positioning */
+/* Text Alignment */
 .centered
 {
     margin-left: auto;
     margin-right: auto;
 }
 
-.left
+/* Flexbox */
+#flex-wrapper
 {
-    justify-content: left;
-}
-
-.right
-{
-    justify-content: right;
+    /* padding-left: 10%; */
+    display: flex;
+    /* gap: 25px; */
+    /* border-style: dotted; */
+    /* border-style: purple; */
 }
 
 .flex-row
@@ -59,8 +67,141 @@ font-style: normal;
 .flex-col
 {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     flex-wrap: wrap;
+}
+
+/* Grid */
+.grid-container
+{
+    display: grid;
+    /* grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: row; */
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    
+}
+
+.grid-container > video
+{
+    border: 3px solid black;
+}
+
+.grid-container > video:hover
+{
+   
+}
+
+.grid-container > label
+{
+    font-family: New-Class;
+}
+
+#environments-grid > a>img, #illustrations-grid > div>img, #illustrations-grid>img
+{
+    border: 3px solid black;
+}
+
+/* Grid Areas */
+#animations-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "cats smoker"
+        "cairo smoker"
+        "rotoscope walkin"
+        "final .";
+}
+
+#animations-grid2
+{
+    display: grid;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto; */
+    grid-template-areas: 
+        ". animations-label ."
+        ". . ."
+        "cats-label  smoker-label roto-label"
+        "cats           smoker       rotoscope"
+        "cairo-label    smoker      final-label"
+        "cairo          smoker        final"
+        "cairo            .            final"
+        "cairo        walkin-label     final"
+        "cairo          walkin            final";
+}
+
+#animations-grid2-flex
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "cats smoker rotoscope"
+        "cairo smoker final"
+        "cairo walkin final";
+}
+
+#characters-grid
+{
+    column-gap: 10px;
+    justify-items: start;
+    align-items: start;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "characters-label characters-label"
+    "bleeding jon-snow"
+    "bleeding lighting"
+    "cyborg lighting"
+    "cyborg crusader"
+    "headshots meowverse"
+    "granny animal-prints"
+    "granny fortune"
+    "skater fortune"
+    "skater fortune";
+}
+
+#characters-grid > a>img
+{
+    border: 3px solid black;
+}
+
+#environments-grid
+{
+    column-gap: 10px;
+    row-gap: 5px;
+    grid-template-areas: 
+    ". environments-label . "
+    " . . ."
+    /* " . . ." */
+    /* " . . ." include if labels*/
+    "roadsign beachhouse seagulls"
+    "phone_line leaves .";
+}
+
+#fine-art-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "sepia-female-left bw-female bw-male sepia-female-back"
+    "boars-head boars-head rose-basket rose-basket"
+    ". conch-shell sepia-female-right .";
+}
+
+#illustrations-grid
+{
+    grid-template-areas: 
+    ". illustrations-label ."
+    ". image-viewer ."
+    ". cow .";
+
+    column-gap: 10px;
 }
 
 .res-640p
@@ -93,7 +234,17 @@ font-style: normal;
     text-decoration: none;
 } */
 
+img, video
+{
+    /* max-width: 100%; */
+}
+
 table a 
+{
+    font-family: New-Class;
+}
+
+.flex-col a
 {
     font-family: New-Class;
 }
@@ -107,24 +258,15 @@ table a
     /* border-style: solid; */
 }
 
-#flex-wrapper
-{
-    /* padding-left: 10%; */
-    display: flex;
-    /* gap: 25px; */
-    /* border-style: dotted; */
-    /* border-style: purple; */
-}
-
 #mobileNav
 {
     /* border-right: solid black; */
-    height: 100%;
+    /* height: 100%; */
     /* width: 12%; */
     /* overflow-y: hidden; */
     /* overflow-x: hidden; */
     /* position: fixed; */
-    top: 20px;
+    /* top: 20px; */
     /* background: white; */
     /* color: white; */
     /* float: left; */
@@ -191,7 +333,7 @@ p
     margin: 0 0 1em;
 }
 
-table#sidebar, th#sidebar, td#sidebar
+table#sidebar, th#sidebar, td#sidebar, div#sidebar
 {
     font-size: 25px;
     padding-bottom: 5%;
@@ -201,7 +343,8 @@ table#sidebar, th#sidebar, td#sidebar
     /* float: left; */
 }
 
-table#sublinks, th#sublinks, td#sublinks
+
+table#sublinks, th#sublinks, td#sublinks, div#sublinks
 {
     font-size: 20px;
     padding-bottom: 10%;
@@ -210,6 +353,52 @@ table#sublinks, th#sublinks, td#sublinks
     /* float: left; */
     
 }
+
+
+.flex-col#sidebar
+{
+    font-size: 25px;
+    padding-bottom: 19%;
+    padding-left: 11%;
+    padding-top: 8%;
+    /* border-spacing: 10px; */
+    min-width: 25%;
+    row-gap: 15px;
+    /* float: left; */
+}
+
+.flex-col#sublinks
+{
+    font-size: 20px;
+    /* padding-bottom: 10%; */
+    /* border-spacing: 10px 10px; */
+    padding-left: 11%;
+    row-gap: 15px;
+}
+
+.flex-col#visDevLinks
+{
+    font-size: 20px;
+    padding-left: 11%;
+    row-gap: 15px;
+}
+
+.flex-col a:link
+{
+    color: rgb(255, 138, 157);
+    text-decoration: none;
+}
+
+.flex-col a:visited
+{
+    color: rgb(255, 138, 157);
+}
+
+.flex-col a:hover
+{
+    color: grey;
+}
+
 
 td a:link
 {
@@ -225,4 +414,105 @@ td a:visited
 td a:hover
 {
     color: grey;
+}
+
+.image-viewer
+{
+    position: relative;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out; /* Slide effect */   
+}
+
+#viewerImage
+{
+    transition: opacity 0.5s ease;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#image-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 9999; /*MUST BE ON TOP*/
+}
+
+#fullscreen-image
+{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.close-btn
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 10000;
+    font-size: 24px;
+}
+
+/* Media Queries */
+@media (max-width: 768px)
+{
+    .grid-container
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #animations-grid
+    {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+        "animations=label"
+        "cats-label"
+        "cats"
+        "smoker-label"
+        "smoker"
+        "rotoscope-label"
+        "rotoscope"
+        "cairo=label"
+        "cairo"
+        "walkin-label"
+        "walkin"
+        "final-label"
+        "final";
+    }
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animations</title>
     <link rel="stylesheet" href="myStyle.css">
 </head>
@@ -11,49 +12,57 @@
     <div id = "flex-wrapper">
         <div id="mobileNav"> <!--Sidebar menu-->
             <h1 style = "padding-left: 6%; padding-top: 3%;">
-                <a href = "aboutMe.html" id = "nameLink">Cicely Parris</a>
+                <a href = "aboutMe.html" id ="nameLink">Cicely Parris</a>
             </h1>
+
             <br>
-                <table id = "sidebar">
-                    <!-- <tr><td><a href="studio-work.html">Studio Work</a></td></tr>
-                    <tr><td><a href="storyboards.html">Storyboards</a></td></tr> -->
-                    <tr><td><a href="animations.html"  style="color: gray;">Animations</a></td></tr>
-                    <tr><td><a href="illustrations.html">Illustrations</a></td></tr>
-                    <tr><td><a href="visual-development.html">Visual Development</a></td></tr>
-                    <tr><td><a href="3D.html">3D</a></td></tr>
-                    <tr><td><a href="fine-art.html">Fine Art</a></td></tr>
-                </table>
+            <div class = "flex-col" id="sidebar">
+                <a href="animations.html" style="color: grey;">Animations</a>
                 
-                <table id = "sublinks">
-                    <tr><td><a href = "aboutMe.html">About</a></td></tr>
-                    <tr><td><a href = "files/CV.pdf" target="_blank">CV</a></td></tr>
-                </table>
+                <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a>
+
+                <div class="flex-col" id="visDevLinks" style="display: none;">
+                    <a href="characters.html">Characters</a>
+                    <a href="environments.html">Environments</a>
+                </div>
+
+                <a href="3D.html">3D</a>
+                <a href="fine-art.html">Fine Art</a>
+                <a href="illustrations.html">Illustrations</a>
+            </div>
+
+            <div class = "flex-col" id="sublinks">
+                <a href = "aboutMe.html"">About</a>
+                <a href = "files/CV.pdf" target="_blank">CV</a>
+            </div>
         </div>
 
-        <div class = "flex-col"> 
+        <div class = "grid-container" id="animations-grid2" style="gap: 15px; padding-left: 50px;"> 
 
-            <div class = "flex-row centered" style="align-items: center;">
-                    <!-- <label style="text-align:center;">I Like Cats</label> -->
-                    <video src="video/animations/i like cats.mp4" controls style = "width:640px; height: 360px;"></video>
+            <label style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: animations-label" class="centered">Animations</label>
 
-                    <!-- <label>Cairo</label> -->
-                    <video src="video/animations/Cairo.mp4" controls class="res-640p"></video>
-            </div>
+            <label class="centered" style="grid-area: cats-label;">I Like Cats</label>
+            <video src="video/animations/i like cats.mp4" controls style = "width:640px; height: 360px; grid-area: cats;"></video>
 
-            <div class = "flex-row centered" style="align-items: baseline;">
-                    <!-- <label class="centered">Rotoscoping Test</label> -->
-                    <video src="video/animations/rotoscoping-parris.mp4" controls class="res-640p"></video>
+            <label class="centered" style="grid-area: cairo-label;">Cairo</label>
+            <video src="video/animations/Cairo.mp4" controls class="res-640p" style="grid-area: cairo; align-self: start;"></video>
 
-                    <!-- <label class="centered">smoker</label> -->
-                    <video src="video/animations/smoker.mp4" controls style="width: 496px; height: 755px;"></video>
+            <label class="centered" style="grid-area: roto-label;">Rotoscoping Test</label>
+            <video src="video/animations/rotoscoping-parris.mp4" controls class="res-640p" style="grid-area: rotoscope;"></video>
 
-                    <!-- <label class="centered">Walkin'</label> -->
-                    <video src="video/animations/walkin.mp4" controls style="width: 480px; height: 480px;"></video>
-            </div>
+            <label class="centered" style="grid-area: final-label;">A Thing Called Evil</label>
+            <video src = "video/animations/Parris-Final Animation-1.m4v" controls class="res-640p" style="grid-area: final; align-self: start;"></video>
+        
+            <label class="centered" style="grid-area: smoker-label;">Smoker</label>
+            <video src="video/animations/smoker.mp4" controls style="width: 372px; height: 566px; grid-area: smoker;"></video> <!--496px by 755px-->
 
+            <label class="centered" style="grid-area: walkin-label;">Walkin'</label>
+            <video src="video/animations/walkin.mp4" controls style="width: 400px; height: 400px; grid-area: walkin;"></video>
+           
         </div>
     </div>
 </div>
 
 </body>
+<script src="javascriptFunctions.js"></script>
 </html>

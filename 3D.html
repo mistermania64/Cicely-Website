@@ -13,21 +13,41 @@
             <h1 style = "padding-left: 6%; padding-top: 3%;">
                 <a href = "aboutMe.html" id = "nameLink">Cicely Parris</a>
             </h1>
+
             <br>
-            <table id = "sidebar">
+            <div class = "flex-col" id="sidebar">
+                <a href="animations.html">Animations</a>
+                <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a>
+
+                <div class="flex-col" id="visDevLinks" style="display: none;">
+                    <a href="characters.html">Characters</a>
+                    <a href="environments.html">Environments</a>
+                </div>
+
+                <a href="3D.html" style="color: gray;">3D</a>
+                <a href="fine-art.html">Fine Art</a>
+                <a href="illustrations.html">Illustrations</a>
+            </div>
+
+            <div class = "flex-col" id="sublinks">
+                <a href = "aboutMe.html">About</a>
+                <a href = "files/CV.pdf" target="_blank">CV</a>
+            </div>
+
+            <!-- <table id = "sidebar"> -->
                 <!-- <tr><td><a href="studio-work.html">Studio Work</a></td></tr>
                 <tr><td><a href="storyboards.html">Storyboards</a></td></tr> -->
-                <tr><td><a href="animations.html">Animations</a></td></tr>
+                <!-- <tr><td><a href="animations.html">Animations</a></td></tr>
                 <tr><td><a href="illustrations.html">Illustrations</a></td></tr>
                 <tr><td><a href="visual-development.html">Visual Development</a></td></tr>
-                <tr><td><a href="3D.html" style="color: gray;">3D</a></td></tr>
+                <tr><td><a href="3D.html">3D</a></td></tr>
                 <tr><td><a href="fine-art.html">Fine Art</a></td></tr>
             </table>
-            
+                
             <table id = "sublinks">
-                <tr><td><a href = "aboutMe.html">About</a></td></tr>
+                <tr><td><a href = "aboutMe.html" style="color: gray;">About</a></td></tr>
                 <tr><td><a href = "files/CV.pdf" target="_blank">CV</a></td></tr>
-            </table>
+            </table> -->
         </div>
 
         <div id = "mainContent"> <!-- Content next to sidebar -->
@@ -36,6 +56,6 @@
     </div>
     <p>add illustrations here</p>
 </div>
-    
+    <script src="javascriptFunctions.js"></script>
 </body>
 </html>

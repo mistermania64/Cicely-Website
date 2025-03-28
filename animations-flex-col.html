@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Animations</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body class="bg-beige">
+    
+<div id = "canvas"> <!-- Overall section -->
+    <div id = "flex-wrapper">
+        <div id="mobileNav"> <!--Sidebar menu-->
+            <h1 style = "padding-left: 6%; padding-top: 3%;">
+                <a href = "aboutMe.html" id = "nameLink">Cicely Parris</a>
+            </h1>
+
+            <br>
+            <div class = "flex-col" id="sidebar">
+                <a href="animations.html" style="color: grey;">Animations</a>
+                <a href="illustrations.html">Illustrations</a>
+                <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a>
+
+                <div class="flex-col" id="visDevLinks" style="display: none;">
+                    <a href="visual-development.html">Characters</a>
+                    <a href="index.html">Environments</a>
+                </div>
+
+                <a href="3D.html">3D</a>
+                <a href="fine-art.html">Fine Art</a>
+            </div>
+
+            <div class = "flex-col" id="sublinks">
+                <a href = "aboutMe.html"">About</a>
+                <a href = "files/CV.pdf" target="_blank">CV</a>
+            </div>
+
+            <!-- <table id = "sidebar"> -->
+                <!-- <tr><td><a href="studio-work.html">Studio Work</a></td></tr>
+                <tr><td><a href="storyboards.html">Storyboards</a></td></tr> -->
+                <!-- <tr><td><a href="animations.html">Animations</a></td></tr>
+                <tr><td><a href="illustrations.html">Illustrations</a></td></tr>
+                <tr><td><a href="visual-development.html">Visual Development</a></td></tr>
+                <tr><td><a href="3D.html">3D</a></td></tr>
+                <tr><td><a href="fine-art.html">Fine Art</a></td></tr>
+            </table>
+                
+            <table id = "sublinks">
+                <tr><td><a href = "aboutMe.html" style="color: gray;">About</a></td></tr>
+                <tr><td><a href = "files/CV.pdf" target="_blank">CV</a></td></tr>
+            </table> -->
+        </div>
+
+        <div class = "flex-col">
+            <label style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: animations-label" class="centered">Animations</label>
+            
+            <div class = "grid-container" id="animations-grid2-flex" style="gap: 15px;"> 
+
+                <!-- <label style="text-align:center;">I Like Cats</label> -->
+                <video src="video/animations/i like cats.mp4" controls style = "width:640px; height: 360px; grid-area: cats;"></video>
+
+                <!-- <label>Cairo</label> -->
+                <video src="video/animations/Cairo.mp4" controls class="res-640p" style="grid-area: cairo; align-self: start;"></video>
+
+                <!-- <label class="centered">Rotoscoping Test</label> -->
+                <video src="video/animations/rotoscoping-parris.mp4" controls class="res-640p" style="grid-area: rotoscope;"></video>
+
+                <video src = "video/animations/Parris-Final Animation.mp4" controls class="res-640p" style="grid-area: final; align-self: start;"></video>
+            
+                <video src="video/animations/smoker.mp4" controls style="width: 372px; height: 566px; grid-area: smoker;"></video> <!--496px by 755px-->
+
+                <!-- <label class="centered">Walkin'</label> -->
+                <video src="video/animations/walkin.mp4" controls style="width: 400px; height: 400px; grid-area: walkin;"></video>
+            
+                <!-- <label class="centered">smoker</label> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="javascriptFunctions.js"></script>
+</html>

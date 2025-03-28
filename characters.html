@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Visual Development</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body class="bg-beige">
+    
+<div id = "canvas"> <!-- Overall section -->
+    <div id = "flex-wrapper">
+        <div id="mobileNav"> <!--Sidebar menu-->
+            <h1 style = "padding-left: 6%; padding-top: 3%;">
+                <a href = "aboutMe.html" id = "nameLink">Cicely Parris</a>
+            </h1>
+
+            <br>
+            <div class = "flex-col" id="sidebar">
+                <a href="animations.html">Animations</a>
+                <a href="#" onclick="showHidden('visDevLinks')">Visual Development</a>
+
+                <div class="flex-col" id="visDevLinks" style="display: block;">
+                    <a href="characters.html" style="color: gray;">Characters</a>
+                    <a href="environments.html">Environments</a>
+                </div>
+
+                <a href="3D.html">3D</a>
+                <a href="fine-art.html">Fine Art</a>
+                <a href="illustrations.html">Illustrations</a>
+            </div>
+
+            <div class = "flex-col" id="sublinks">
+                <a href = "aboutMe.html">About</a>
+                <a href = "files/CV.pdf" target="_blank">CV</a>
+            </div>
+        </div>
+
+        <div class = "grid-container centered" id="characters-grid">
+            <label style="font-family: New-Class; padding: 2%; font-size: 40px; grid-area: characters-label; justify-self: center;">Characters</label>
+
+            <a target="_blank" href="img/Visual Development/Characters/animal-print-pants.jpg" style="grid-area: animal-prints;">
+                <img src="img/Visual Development/Characters/animal-print-pants.jpg" style="width: 769px; height: 567px;">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/bleeding-metalhead.JPG" style="grid-area: bleeding;">
+                <img src="img/Visual Development/Characters/bleeding-metalhead.JPG" style="width: 496px; height: 755px;"> <!--width 496px; height 755px;-->
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/cyborg-girl.JPG" style="grid-area: cyborg;">
+                <img src="img/Visual Development/Characters/cyborg-girl.JPG" style="width: 496px; height: 755px;">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/Fortune-Bio.JPG" style="grid-area: fortune; justify-self: center; align-self: center;">
+                <img src="img/Visual Development/Characters/Fortune-Bio.JPG" style="width: 586.25px; height: 615.75px;">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/jon-snow.JPG" style="grid-area: jon-snow; justify-self: end;">
+                <img src="img/Visual Development/Characters/jon-snow.JPG" style="width: 756.333px; height: 512.333px;">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/lighting-examples.jpg" style="grid-area: lighting; justify-self: end;">
+                <img src="img/Visual Development/Characters/lighting-examples.jpg" style="width: 756.333px; height: 512.333px;"> <!--width: 840.333px; height: 590px;-->
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/meowverse-cats.JPG" style="grid-area: meowverse; justify-self: center; align-self: center;">
+                <img src="img/Visual Development/Characters/meowverse-cats.JPG" style="width: 687px; height: 499px;">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/metal-band-headshots.JPG" style="grid-area: headshots;">
+                <img src="img/Visual Development/Characters/metal-band-headshots.JPG" style="width: 498px; height: 600px;"> <!--width: 747px; height: 899px;-->
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/orange-crusader.JPG" style="grid-area: crusader; justify-self: end;">
+                <img src="img/Visual Development/Characters/orange-crusader.JPG" style="width: 756.333px; height: 512.333px">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/skater-nun.JPG" style="grid-area: skater;">
+                <img src="img/Visual Development/Characters/skater-nun.JPG" style="width: 496px; height: 513px;">
+            </a>
+
+            <a target="_blank" href="img/Visual Development/Characters/stoner-granny.JPG" style="grid-area: granny; justify-self: center;" >
+                <img src="img/Visual Development/Characters/stoner-granny.JPG" style="width: 444px; height: 704px;">
+            </a>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="javascriptFunctions.js"></script>
+</body>
+</html>

@@ -46,11 +46,11 @@
 
             <div class = "image-viewer" style="grid-area: image-viewer">
                 <button class = "arrow left" onclick="prevImage()">&#10094;</button>
-                <img id = "viewerImage" class="res-640p" src="img/Illustration/good-morning-neon.JPG" alt = "Image Viewer">
+                <img id = "viewerImage" class="res-640p" data-src="img/Illustration/good-morning-neon.JPG" loading="lazy" alt = "Image Viewer">
                 <button class = "arrow right" onclick="nextImage()">&#10095;</button>
             </div> 
 
-            <img src ="img/Illustration/girl-with-cow.jpg" style="width: 600px; height: 449px; grid-area: cow;" onclick="openFullScreen(this.src)">
+            <img data-src ="img/Illustration/girl-with-cow.jpg" loading="lazy" style="width: 600px; height: 449px; grid-area: cow;" onclick="openFullScreen(this.src)">
         </div>
     
 
